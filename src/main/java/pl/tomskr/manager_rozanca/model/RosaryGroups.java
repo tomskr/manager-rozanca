@@ -2,12 +2,12 @@ package pl.tomskr.manager_rozanca.model;
 
 
 
-public class GrupyRóżańca {
+public class RosaryGroups {
 
-    public GrupyRóżańca() {
+    public RosaryGroups() {
     }
 
-    public GrupyRóżańca(long id, String nazwaGrupy) {
+    public RosaryGroups(long id, String nazwaGrupy) {
         Id = id;
         this.nazwaGrupy = nazwaGrupy;
     }
