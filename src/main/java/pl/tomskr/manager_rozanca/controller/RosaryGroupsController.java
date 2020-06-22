@@ -1,8 +1,6 @@
 package pl.tomskr.manager_rozanca.controller;
 
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.tomskr.manager_rozanca.model.RosaryGroups;
 import pl.tomskr.manager_rozanca.service.RosaryGroupService;
 import java.util.List;
@@ -26,7 +24,8 @@ public class RosaryGroupsController {
         return rosaryGroupService.getRosaryGroup(id);
     }
 
-//    public void deleteRosaryGroup(){
-//
-//    }
+    @RequestMapping(method = RequestMethod.POST, value = "/groups/new")
+    public void addRosaryGroup(@RequestBody  RosaryGroups rosaryGroups){
+        rosaryGroupService.addRosaryGroup(rosaryGroups);
+    }
 }
