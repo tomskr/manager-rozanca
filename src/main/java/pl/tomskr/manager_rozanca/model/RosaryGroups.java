@@ -7,19 +7,19 @@ public class RosaryGroups {
     public RosaryGroups() {
     }
 
-    public RosaryGroups(long id, String nazwaGrupy) {
+    public RosaryGroups(String id, String nazwaGrupy) {
         Id = id;
         this.nazwaGrupy = nazwaGrupy;
     }
 
-    private long Id;
+    private String Id;
     private String nazwaGrupy;
 
-    public long getId() {
+    public String getId() {
         return Id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         Id = id;
     }
 
